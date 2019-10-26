@@ -6,7 +6,7 @@ var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+    saveExample: function(example) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
