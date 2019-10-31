@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "Animal_DB",
+    "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
   },
