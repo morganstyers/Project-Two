@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -27,12 +30,12 @@
             <p class="lead"></p>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#lost">
-               I Lost A Pet!
+                I Lost A Pet!
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="lost" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -43,17 +46,57 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                         <h6>Lets find out about your little one.</h6>
-                         <form>
-                                <div class="row">
-                                  <div class="col">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                  </div>
-                                  <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name">
-                                  </div>
-                                </div>
-                              </form>
+
+                            <form>
+                                <fieldset class="uk-fieldset">
+                            
+                                    <legend class="uk-legend">Lets Find Out About Your Little One</legend>
+                            
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" placeholder="Animal Name">
+                                    </div>
+                            
+                                    <div class="uk-margin">
+                                        <select class="uk-select">
+                                            <option>Animal Type</option>
+                                            <button type="button">Animal Type</button>
+<div uk-dropdown></div>
+                                            <option>Dog</option>
+                                            <option>Cat</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <select class="uk-select">
+                                            <option>Animal Color</option>
+                                            <button type="button">Animal Color</button>
+<div uk-dropdown></div>
+                                            <option>White</option>
+                                            <option>Black</option>
+                                            <option>Brown</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <select class="uk-select">
+                                            <option>Animal Size</option>
+                                            <button type="button">Animal Size</button>
+<div uk-dropdown></div>
+                                            <option>Small</option>
+                                            <option>Medium</option>
+                                            <option>Large</option>
+                                        </select>
+                                    </div>
+                                    <h6>Where were they last seen?</h6>
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" placeholder="Zip Code">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <textarea class="uk-textarea" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -64,31 +107,78 @@
             </div>
 
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#found">
-                   I Found A Pet!
-                  </button>
-                  <div class="modal fade" id="found" tabindex="-1" role="dialog"
-                  aria-labelledby="found" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="found">You found a pet? Lucky you!</h5>
-                              <hr>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                           <h6>Lets get your guest back home</h6>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-  
-  
+                I Found A Pet!
+            </button>
+            <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="found">You found a pet? Lucky you!</h5>
+                            <hr>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form>
+                                <fieldset class="uk-fieldset">
+                            
+                                    <legend class="uk-legend">Lets get your guest back home</legend>
+                            
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" placeholder="Animal Name (if applicable)">
+                                    </div>
+                            
+                                    <div class="uk-margin">
+                                        <h6>What Kind of Animal Did You Find?</h6>
+                                        <select class="uk-select">
+                                            <option>Dog</option>
+                                            <option>Cat</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                            <select class="uk-select">
+                                                <option>Animal Color</option>
+                                                <button type="button">Animal Color</button>
+    <div uk-dropdown></div>
+                                                <option>White</option>
+                                                <option>Black</option>
+                                                <option>Brown</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <select class="uk-select">
+                                                <option>Animal Size</option>
+                                                <button type="button">Animal Size</button>
+    <div uk-dropdown></div>
+                                                <option>Small</option>
+                                                <option>Medium</option>
+                                                <option>Large</option>
+                                            </select>
+                                        </div>
+                                        <h6>Where did you find them?</h6>
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" placeholder="Zip Code">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <textarea class="uk-textarea" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </body>
