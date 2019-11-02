@@ -1,3 +1,4 @@
+
 .tuna {
     animation: walk-cycle 1s steps(12) infinite;
     background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
@@ -132,4 +133,8 @@
       body {
           background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),
           #d2d2d2 url(http://stash.rachelnabors.com/24ways2012/background_clouds.png);
+      }
+
+      .h1{
+        font-family: 'Pacifico', cursive;
       }
