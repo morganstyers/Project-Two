@@ -11,29 +11,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <title>Pet Finder|| Home</title>
+    <script src="https://kit.fontawesome.com/99d64ce7eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Unna&display=swap" rel="stylesheet">
+    <title>Petrified || Home</title>
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">petrified</h1>
+            <i id="paw" class="fas fa-paw"></i>
+            <h1 class="animated fadeInDown" id="title" class="display-4">PETRIFIED</h1>
+            <h3>Your Home For Getting Them Home</h3>
             <hr>
-            <p class="lead"></p>
-            <!-- Button trigger modal -->
+
             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#lost">
                 I Lost A Pet!
             </button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#found">
+                I Found A Pet!
+            </button>
+            <a class="btn btn-dark" href="./catalogue.html" role="button">Browse Our Catalogue</a>
 
-            <!-- Modal -->
             <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -49,18 +57,18 @@
 
                             <form>
                                 <fieldset class="uk-fieldset">
-                            
+
                                     <legend class="uk-legend">Lets Find Out About Your Little One</legend>
-                            
+
                                     <div class="uk-margin">
                                         <input class="uk-input" type="text" placeholder="Animal Name">
                                     </div>
-                            
+
                                     <div class="uk-margin">
                                         <select class="uk-select">
-                                            <option>Animal Type</option>
                                             <button type="button">Animal Type</button>
-<div uk-dropdown></div>
+                                            <option>Animal Type</option>
+                                            <div uk-dropdown></div>
                                             <option>Dog</option>
                                             <option>Cat</option>
                                             <option>Other</option>
@@ -71,7 +79,7 @@
                                         <select class="uk-select">
                                             <option>Animal Color</option>
                                             <button type="button">Animal Color</button>
-<div uk-dropdown></div>
+                                            <div uk-dropdown></div>
                                             <option>White</option>
                                             <option>Black</option>
                                             <option>Brown</option>
@@ -82,7 +90,7 @@
                                         <select class="uk-select">
                                             <option>Animal Size</option>
                                             <button type="button">Animal Size</button>
-<div uk-dropdown></div>
+                                            <div uk-dropdown></div>
                                             <option>Small</option>
                                             <option>Medium</option>
                                             <option>Large</option>
@@ -92,8 +100,28 @@
                                     <div class="uk-margin">
                                         <input class="uk-input" type="text" placeholder="Zip Code">
                                     </div>
+                                    <h6>Can We Contact You?</h6>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Yes,
+                                            Please!</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">No Thanks!</label>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Contact Info">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your info
+                                            with anyone else.</small>
+                                    </div>
                                     <div class="uk-margin">
-                                        <textarea class="uk-textarea" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                                        <textarea class="uk-textarea" rows="5"
+                                            placeholder="Textarea">Anything you'd like to add?</textarea>
                                     </div>
                                 </fieldset>
                             </form>
@@ -105,10 +133,6 @@
                     </div>
                 </div>
             </div>
-
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#found">
-                I Found A Pet!
-            </button>
             <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
@@ -123,16 +147,17 @@
 
                             <form>
                                 <fieldset class="uk-fieldset">
-                            
+
                                     <legend class="uk-legend">Lets get your guest back home</legend>
-                            
+
                                     <div class="uk-margin">
                                         <input class="uk-input" type="text" placeholder="Animal Name (if applicable)">
                                     </div>
-                            
+
                                     <div class="uk-margin">
                                         <h6>What Kind of Animal Did You Find?</h6>
                                         <select class="uk-select">
+                                            <option>Animal Type</option>
                                             <option>Dog</option>
                                             <option>Cat</option>
                                             <option>Other</option>
@@ -140,32 +165,52 @@
                                     </div>
 
                                     <div class="uk-margin">
-                                            <select class="uk-select">
-                                                <option>Animal Color</option>
-                                                <button type="button">Animal Color</button>
-    <div uk-dropdown></div>
-                                                <option>White</option>
-                                                <option>Black</option>
-                                                <option>Brown</option>
-                                                <option>Other</option>
-                                            </select>
-                                        </div>
-                                        <div class="uk-margin">
-                                            <select class="uk-select">
-                                                <option>Animal Size</option>
-                                                <button type="button">Animal Size</button>
-    <div uk-dropdown></div>
-                                                <option>Small</option>
-                                                <option>Medium</option>
-                                                <option>Large</option>
-                                            </select>
-                                        </div>
-                                        <h6>Where did you find them?</h6>
+                                        <select class="uk-select">
+                                            <option>Animal Color</option>
+                                            <button type="button">Animal Color</button>
+                                            <div uk-dropdown></div>
+                                            <option>White</option>
+                                            <option>Black</option>
+                                            <option>Brown</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <select class="uk-select">
+                                            <option>Animal Size</option>
+                                            <button type="button">Animal Size</button>
+                                            <div uk-dropdown></div>
+                                            <option>Small</option>
+                                            <option>Medium</option>
+                                            <option>Large</option>
+                                        </select>
+                                    </div>
+                                    <h6>Where did you find them?</h6>
                                     <div class="uk-margin">
                                         <input class="uk-input" type="text" placeholder="Zip Code">
                                     </div>
+                                    <h6>Can We Contact You?</h6>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Yes,
+                                            Please!</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">No Thanks!</label>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Contact Info">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your info
+                                            with anyone else.</small>
+                                    </div>
                                     <div class="uk-margin">
-                                        <textarea class="uk-textarea" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                                        <textarea class="uk-textarea" rows="5"
+                                            placeholder="Textarea">Anything you'd like to add?</textarea>
                                     </div>
                                 </fieldset>
                             </form>
@@ -177,10 +222,8 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-    </div>
+
 </body>
 
 </html>
