@@ -7,7 +7,10 @@ module.exports = function(sequelize, DataTypes) {
       color: DataTypes.STRING,
       size: DataTypes.STRING,
       description: DataTypes.TEXT,
-      lostFound: DataTypes.STRING,
+      lostFound: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: true
+      },
       lastSeen: DataTypes.TEXT,
       contactInfo: DataTypes.TEXT,
       zip: DataTypes.STRING
