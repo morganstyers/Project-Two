@@ -19,7 +19,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/99d64ce7eb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Unna&display=swap" rel="stylesheet">
     <title>Petrified || Home</title>
 </head>
@@ -27,7 +29,8 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 id="title" class="display-4">PETRIFIED</h1>
+            <i id="paw" class="fas fa-paw"></i>
+            <h1 class="animated fadeInDown" id="title" class="display-4">PETRIFIED</h1>
             <h3>Your Home For Getting Them Home</h3>
             <hr>
 
@@ -96,6 +99,25 @@
                                     <h6>Where were they last seen?</h6>
                                     <div class="uk-margin">
                                         <input class="uk-input" type="text" placeholder="Zip Code">
+                                    </div>
+                                    <h6>Can We Contact You?</h6>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Yes,
+                                            Please!</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">No Thanks!</label>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Contact Info">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your info
+                                            with anyone else.</small>
                                     </div>
                                     <div class="uk-margin">
                                         <textarea class="uk-textarea" rows="5"
@@ -167,6 +189,25 @@
                                     <div class="uk-margin">
                                         <input class="uk-input" type="text" placeholder="Zip Code">
                                     </div>
+                                    <h6>Can We Contact You?</h6>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Yes,
+                                            Please!</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">No Thanks!</label>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Contact Info">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your info
+                                            with anyone else.</small>
+                                    </div>
                                     <div class="uk-margin">
                                         <textarea class="uk-textarea" rows="5"
                                             placeholder="Textarea">Anything you'd like to add?</textarea>
@@ -182,7 +223,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 </body>
 
 </html>
