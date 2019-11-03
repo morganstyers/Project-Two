@@ -1,11 +1,11 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded. //CHANGE STATE FROM LOST TO FOUND
 $(function() {
-  $(".change-sleep").on("click", function(event) {
+  $("#found").on("click", function(event) {
     var id = $(this).data("id");
-    var newSleep = $(this).data("newsleep");
+    var found = $(this).data("found");
 
-    var newSleepState = {
-      sleepy: newSleep
+    var lostFound = {
+      found: found
     };
 
     // Send the PUT request.

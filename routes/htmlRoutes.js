@@ -9,8 +9,7 @@ module.exports = function(app) {
       });
     });
   });
-
-  app.get("/lostfound/", function(req, res) {
+  app.get("/lostFound/", function(req, res) {
     db.Animal.findAll({ where: { lostFound: req.params.lostFound } }).then(
       function(dbAnimals) {
         res.render("lostfound", {
