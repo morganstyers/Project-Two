@@ -44,8 +44,8 @@
                                             <div class="row">Color:{{color}}</div>
                                             <div class="row">Size:{{size}}</div>
                                         </div>
-                                        {{/each}}
-                                        {{#each animal}}
+                                        {{!-- {{/each}} --}}
+                                        {{!-- {{#each animal}} --}}
                                         <div class="col-xs-8">
                                             <div class="row">Description:{{description}}</div>
                                             <div class="row">Last Seen:{{lastSeen}}</div>
@@ -63,8 +63,8 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="card-footer position-fixed">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1">Found</label>
+                                                <input type="checkbox" class="form-check-input" id="found">
+                                                <label class="form-check-label" for="found">Found</label>
                                             </div>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="row">Description:{{description}}</div>
-                                        <div class="row">Found Near:{{lastSeen}</div>
+                                        <div class="row">Found Near:{{lastSeen}}</div>
                                         <div class="row">Contact:{{contactInfo}}</div>
                                         <div class="row">Zip:{{zip}}</div>
                                         {{/unless}}
