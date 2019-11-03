@@ -1,3 +1,7 @@
 .list-group-item {
   line-height: 2.5;
 }
+.card-img {
+  height: 400px;
+  width: 200px;
+}
