@@ -1,21 +1,43 @@
-var db = require("../models");
+/* var db = require("../models");
 
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     db.Animal.findAll({}).then(function(dbAnimals) {
-      res.render("catalogue", {
+      res.render("catalog", {
         animals: dbAnimals
       });
     });
   });
 
-  app.get("/catalogue/, function(req, res) {
-    db.Example.findAll({ where: { id: req.params.id } }).then(function(
+  app.get("/catalog/", function(req, res) {
+    db.Animal.findAll({ where: { id: req.params.id } }).then(function(
       dbExample
     ) {
-      res.render("example", {
-        example: dbExample
+      res.render("catalog", {
+        animmals: dbAnimals
       });
     });
   });
+ */
+
+var db = require("../models");
+module.exports = function(app) {
+  // Load index page
+  app.get("/", function(req, res) {
+    db.Animal.findAll({}).then(function(dbAnimals) {
+      res.render("catalog", {
+        animals: dbAnimals
+      });
+    });
+  });
+  app.get("/lostFound/", function(req, res) {
+    db.Animal.findAll({ where: { lostFound: req.params.lostFound } }).then(
+      function(dbAnimals) {
+        res.render("lostfound", {
+          animals: dbAnimals
+        });
+      }
+    );
+  });
+};
