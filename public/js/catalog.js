@@ -9,21 +9,21 @@ $(function() {
     };
 
     // Send the PUT request.
-    $.ajax("/api/cats/" + id, {
+    $.ajax("/api/animals/" + id, {
       type: "PUT",
-      data: newSleepState
+      data: lostFound
     }).then(function() {
-      console.log("changed sleep to", newSleep);
+      console.log("changed animal to", lostFound);
       // Reload the page to get the updated list
       location.reload();
     });
   });
 
-  $(".create-form").on("submit", function(event) {
+  $("#lostAnimal").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newCat = {
+    var newAnimal = {
       name: $("#ca")
         .val()
         .trim(),
@@ -33,24 +33,24 @@ $(function() {
     };
 
     // Send the POST request.
-    $.ajax("/api/cats", {
+    $.ajax("/api/catalog", {
       type: "POST",
       data: newCat
     }).then(function() {
-      console.log("created new cat");
+      console.log("created new lost animal");
       // Reload the page to get the updated list
       location.reload();
     });
   });
 
-  $(".delete-cat").on("click", function(event) {
+  $("#foundAnimal").on("click", function(event) {
     var id = $(this).data("id");
 
     // Send the DELETE request.
-    $.ajax("/api/cats/" + id, {
-      type: "DELETE"
+    $.ajax("/api/catalog/" + id, {
+      type: "POST"
     }).then(function() {
-      console.log("deleted cat", id);
+      console.log("created new found animal", id);
       // Reload the page to get the updated list
       location.reload();
     });
