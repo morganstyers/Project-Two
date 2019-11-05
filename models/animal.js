@@ -2,6 +2,7 @@ module.exports = function(sequelize, DataTypes) {
   var Animal = sequelize.define(
     "Animal",
     {
+      img: DataTypes.STRING,
       type: DataTypes.STRING,
       name: DataTypes.STRING,
       color: DataTypes.STRING,
