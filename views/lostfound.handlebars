@@ -1,10 +1,10 @@
-
 <body style="text-align: center;">
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <i id="paw"  style="font-size: 50px; " class="fas fa-paw"></i>
-    <h1 class="animated fadeInDown" id="title" style="font-family: 'Abril Fatface', cursive;
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <i id="paw" style="font-size: 50px; " class="fas fa-paw"></i>
+      <h1 class="animated fadeInDown" id="title" style="font-family: 'Abril Fatface', cursive;
     text-align: center;" class="display-4">PETRIFIED</h1>
+
     <h3 style="font-family: 'Unna', serif;">Your Home For Getting Them Home</h3>
     <hr>
 {{!-- added if helper and handlebar  not sure if this needs to be in the same --}}
@@ -16,38 +16,40 @@
     </button>
     <a class="btn btn-dark" href="/catalog/" role="button">Browse Our Catalogue</a>
 
-    <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 style="font-family: 'Abril Fatface', cursive;" class="modal-title" id="lost">You lost a pet? Take a deep breath.</h2>
-            <hr>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
 
-            <form>
-              <fieldset class="uk-fieldset">
+      <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 style="font-family: 'Abril Fatface', cursive;" class="modal-title" id="lost">You lost a pet? Take a
+                deep breath.</h2>
+              <hr>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
 
-                <legend class="uk-legend">Lets Find Out About Your Little One</legend>
+              <form>
+                <fieldset class="uk-fieldset">
 
-                <div class="uk-margin">
-                  <input class="uk-input" type="text" placeholder="Animal Name">
-                </div>
+                  <legend class="uk-legend">Lets Find Out About Your Little One</legend>
 
-                <div class="uk-margin">
-                  <select class="uk-select" id="at">
-                    <button type="button">Animal Type</button>
-                    <option>Animal Type</option>
-                    <div uk-dropdown></div>
-                    <option>Dog</option>
-                    <option>Cat</option>
-                    <option>Other</option>
-                  </select>
-                </div>
+                  <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Animal Name">
+                  </div>
+
+                  <div class="uk-margin">
+                    <select class="uk-select" id="at">
+                      <button type="button">Animal Type</button>
+                      <option>Animal Type</option>
+                      <div uk-dropdown></div>
+                      <option>Dog</option>
+                      <option>Cat</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
 
                 <div class="uk-margin">
                   <select class="uk-select" id="ac">
@@ -74,6 +76,10 @@
                 <div class="uk-margin">
                   <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
                 </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload a picture</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
                 <h6>Can We Contact You?</h6>
                 <div class="custom-control custom-radio custom-control-inline">
                   <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
@@ -92,7 +98,8 @@
                     with anyone else.</small>
                 </div>
                 <div class="uk-margin">
-                  <textarea class="uk-textarea" id="desc" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                  <textarea class="uk-textarea" id="desc" rows="5"
+                    placeholder="Textarea">Anything you'd like to add?</textarea>
                 </div>
               </fieldset>
             </form>
@@ -103,37 +110,37 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 style="font-family: 'Abril Fatface', cursive;"  class="modal-title" id="found">You found a pet? Lucky you!</h2>
-            <hr>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
+      <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 style="font-family: 'Abril Fatface', cursive;" class="modal-title" id="found">You found a pet? Lucky
+                you!</h2>
+              <hr>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
 
-            <form>
-              <fieldset class="uk-fieldset">
+              <form>
+                <fieldset class="uk-fieldset">
 
-                <legend class="uk-legend">Lets get your guest back home</legend>
+                  <legend class="uk-legend">Lets get your guest back home</legend>
 
-                <div class="uk-margin">
-                  <input class="uk-input" type="text" placeholder="Animal Name (if applicable)">
-                </div>
+                  <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Animal Name (if applicable)">
+                  </div>
 
-                <div class="uk-margin">
-                  <h6>What Kind of Animal Did You Find?</h6>
-                  <select class="uk-select" id="at">
-                    <option>Animal Type</option>
-                    <option>Dog</option>
-                    <option>Cat</option>
-                    <option>Other</option>
-                  </select>
-                </div>
+                  <div class="uk-margin">
+                    <h6>What Kind of Animal Did You Find?</h6>
+                    <select class="uk-select" id="at">
+                      <option>Animal Type</option>
+                      <option>Dog</option>
+                      <option>Cat</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
 
                 <div class="uk-margin">
                   <select class="uk-select" id="ac">
@@ -160,6 +167,10 @@
                 <div class="uk-margin">
                   <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
                 </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload a picture</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
                 <h6>Can We Contact You?</h6>
                 <div class="custom-control custom-radio custom-control-inline">
                   <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
@@ -178,7 +189,8 @@
                     with anyone else.</small>
                 </div>
                 <div class="uk-margin">
-                  <textarea class="uk-textarea" id="desc" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                  <textarea class="uk-textarea" id="desc" rows="5"
+                    placeholder="Textarea">Anything you'd like to add?</textarea>
                 </div>
               </fieldset>
             </form>
@@ -191,5 +203,4 @@
       </div>
     </div>
   </div>
-</div>
 </body>
