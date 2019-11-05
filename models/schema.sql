@@ -1,8 +1,7 @@
-#DROP DATABASE IF EXISTS animal_db;
-#CREATE DATABASE animal_db;
+DROP DATABASE IF EXISTS animal_db;
+CREATE DATABASE animal_db;
 
 USE animal_db;
-
 
 INSERT INTO Animals (img, type, name, color, size, description, lostFound, lastSeen, contactInfo, zip)
 VALUES ("brownSpots.jpg","dog","fido", "brown", "S", "Brown dog w/spots", true, "Yesterday on Independence", "Pam 704-555-6166", "28215"),
@@ -25,4 +24,3 @@ VALUES ("brownSpots.jpg","dog","fido", "brown", "S", "Brown dog w/spots", true, 
 ("brownCat.jpeg","cat","Cheshire", "brown", "S", "Will scratch your eyes out", true, "WT Harris Blvd", "Grady, 704-555-7752", 28213),
 ("blackCat2.jpeg","cat"," ", "black", "M", "Really sneaky", false, "North Davidson", "Elizabeth, 704-555-7752", 28211),
 ("brownMutt.html","dog"," ", "brown", "L", "This is a mutt", false, "At Wendys", "Alice, 704-555-3543", 28209)
-
