@@ -6,10 +6,10 @@
     <hr>
 {{!-- added if helper and handlebar  not sure if this needs to be in the same --}}
     <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#lost">
-      {{#if lostFound}} I Lost A Pet! {{/if}}
+      I Lost A Pet! 
     </button>
     <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#found">
-      {{#unless lostFound}}I Found A Pet!{{/unless}}
+      I Found A Pet! 
     </button>
     <a class="btn btn-dark" href="./home.html" role="button">Browse Our Catalogue</a>
 
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="uk-margin">
-                  <select class="uk-select">
+                  <select class="uk-select" id="at">
                     <button type="button">Animal Type</button>
                     <option>Animal Type</option>
                     <div uk-dropdown></div>
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="uk-margin">
-                  <select class="uk-select">
+                  <select class="uk-select" id="ac">
                     <option>Animal Color</option>
                     <button type="button">Animal Color</button>
                     <div uk-dropdown></div>
@@ -58,7 +58,7 @@
                   </select>
                 </div>
                 <div class="uk-margin">
-                  <select class="uk-select">
+                  <select class="uk-select" id="as">
                     <option>Animal Size</option>
                     <button type="button">Animal Size</button>
                     <div uk-dropdown></div>
@@ -69,7 +69,7 @@
                 </div>
                 <h6>Where were they last seen?</h6>
                 <div class="uk-margin">
-                  <input class="uk-input" type="text" placeholder="Zip Code">
+                  <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
                 </div>
                 <h6>Can We Contact You?</h6>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -83,13 +83,13 @@
                 </div>
                 <div>
                   <br>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  <input type="email" class="form-control" id="contact" aria-describedby="emailHelp"
                     placeholder="Contact Info">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your info
                     with anyone else.</small>
                 </div>
                 <div class="uk-margin">
-                  <textarea class="uk-textarea" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                  <textarea class="uk-textarea" id="desc" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
                 </div>
               </fieldset>
             </form>
@@ -124,7 +124,7 @@
 
                 <div class="uk-margin">
                   <h6>What Kind of Animal Did You Find?</h6>
-                  <select class="uk-select">
+                  <select class="uk-select" id="at">
                     <option>Animal Type</option>
                     <option>Dog</option>
                     <option>Cat</option>
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class="uk-margin">
-                  <select class="uk-select">
+                  <select class="uk-select" id="ac">
                     <option>Animal Color</option>
                     <button type="button">Animal Color</button>
                     <div uk-dropdown></div>
@@ -144,7 +144,7 @@
                   </select>
                 </div>
                 <div class="uk-margin">
-                  <select class="uk-select">
+                  <select class="uk-select" id="as">
                     <option>Animal Size</option>
                     <button type="button">Animal Size</button>
                     <div uk-dropdown></div>
@@ -155,7 +155,7 @@
                 </div>
                 <h6>Where did you find them?</h6>
                 <div class="uk-margin">
-                  <input class="uk-input" type="text" placeholder="Zip Code">
+                  <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
                 </div>
                 <h6>Can We Contact You?</h6>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -169,13 +169,13 @@
                 </div>
                 <div>
                   <br>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  <input type="email" class="form-control" id="contact" aria-describedby="emailHelp"
                     placeholder="Contact Info">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your info
                     with anyone else.</small>
                 </div>
                 <div class="uk-margin">
-                  <textarea class="uk-textarea" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
+                  <textarea class="uk-textarea" id="desc" rows="5" placeholder="Textarea">Anything you'd like to add?</textarea>
                 </div>
               </fieldset>
             </form>
