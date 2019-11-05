@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS animal_db;
-CREATE DATABASE animal_db;
+#DROP DATABASE IF EXISTS animal_db;
+#CREATE DATABASE animal_db;
 
 USE animal_db;
 
@@ -13,7 +13,6 @@ VALUES ("dog","fido", "brown", "S", "Brown dog w/spots", true, "Yesterday on Ind
 ("parrot", "eddie", "red", "S", "Red parrot with rainbow colored wings RARE BREED", true, "Exotic Animals Convention", "Tyler 704-874-0837", "28214"),
 ("dog", "killer", "black", "S", "weiner dog with brown feet", false, "Near First Ward Park", "Kim 704-837-3425", "28235"),
 ("cat", "pixie", "orange", "S", "Orange cat similar to garfield", true, "Beatties Ford Rd", "Tom 704-565-7865", "28214"),
-("cat", "pixie", "orange", "S", "Orange cat similar to garfield", false, "Beatties Ford Rd", "Tom 704-565-7865", "28214"),
 ("dog","Fido", "black", "L", "Rotweiller", true, "On my porch", "Bill, 704-555-2833", 28205),
 ("dog","Sasquatch", "brown", "S", "Brown dog w/spots", true, "Yesterday on Independence", "Pam, 704-555-6166", 28215),
 ("turtle","Cecil", "green", "M", " ", false, "In my yard on Central Ave", "Cynthia, 704-555-4362", 28205),
