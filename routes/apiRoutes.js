@@ -15,7 +15,7 @@ module.exports = function(app) {
     });
   });
 
-  // Delete an example by id
+  // Update an example by id
   app.put("/api/animals/:id", function(req, res) {
     db.Animal.update({ where: { id: req.params.id } }).then(function(results) {
       res.json(results);

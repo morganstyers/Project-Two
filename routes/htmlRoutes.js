@@ -15,12 +15,10 @@ module.exports = function(app) {
   });
 
   app.get("/catalog/", function(req, res) {
-    db.Animal.findAll({ where: { lostFound: req.params.lostFound } }).then(
-      function(dbAnimals) {
-        res.render("catalog", {
-          animals: dbAnimals
-        });
-      }
-    );
+    db.Animal.findAll({}).then(function(dbAnimals) {
+      res.render("catalog", {
+        animals: dbAnimals
+      });
+    });
   });
 };
