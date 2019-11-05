@@ -1,4 +1,7 @@
-
+#login{
+  padding-top: 45px;
+  font-size: 70px;
+}
 .tuna {
     animation: walk-cycle 1s steps(12) infinite;
     background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
@@ -140,6 +143,7 @@
         font-family: 'Pacifico', cursive;
       }
 
+<<<<<<< HEAD:public/styles/tuna.css
       .pill-nav a {
         display: inline-block;
         color: black;
@@ -161,3 +165,6 @@
         background-color: dodgerblue;
         color: white;
       }
+=======
+  
+>>>>>>> f6a4aeda86c98501ca28cbd6c19a19323a9431c6:style.css
