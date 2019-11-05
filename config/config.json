@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "gammaHOTEL911",
+    "password": "root",
     "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
