@@ -3,7 +3,7 @@
     <div class="container">
       <i id="paw" style="font-size: 50px; " class="fas fa-paw"></i>
       <h1 class="animated fadeInDown" id="title" style="font-family: 'Abril Fatface', cursive;
-    text-align: center;" class="display-4">PETRIFIED</h1>
+      text-align: center;" class="display-4">PETRIFIED</h1>
       <h3 style="font-family: 'Unna', serif;">Your Home For Getting Them Home</h3>
       <hr>
       <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#lost">
@@ -13,40 +13,40 @@
         I Found A Pet!
       </button>
       <a class="btn btn-dark" href="/catalog/" role="button">Browse Our Catalogue</a>
+    </div>
+    <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 style="font-family: 'Abril Fatface', cursive;" class="modal-title" id="lost">You lost a pet? Take a
+              deep breath.</h2>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
 
-      <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 style="font-family: 'Abril Fatface', cursive;" class="modal-title" id="lost">You lost a pet? Take a
-                deep breath.</h2>
-              <hr>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
+            <form>
+              <fieldset class="uk-fieldset">
 
-              <form>
-                <fieldset class="uk-fieldset">
+                <legend class="uk-legend">Lets Find Out About Your Little One</legend>
 
-                  <legend class="uk-legend">Lets Find Out About Your Little One</legend>
+                <div class="uk-margin">
+                  <input class="uk-input" type="text" placeholder="Animal Name">
+                </div>
 
-                  <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Animal Name">
-                  </div>
-
-                  <div class="uk-margin">
-                    <select class="uk-select" id="at">
-                      <button type="button">Animal Type</button>
-                      <option>Animal Type</option>
-                      <div uk-dropdown></div>
-                      <option>Dog</option>
-                      <option>Cat</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
+                <div class="uk-margin">
+                  <select class="uk-select" id="at">
+                    <button type="button">Animal Type</button>
+                    <option>Animal Type</option>
+                    <div uk-dropdown></div>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Other</option>
+                  </select>
+                </div>
 
                 <div class="uk-margin">
                   <select class="uk-select" id="ac">
@@ -107,6 +107,7 @@
           </div>
         </div>
       </div>
+    </div>
       <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
@@ -139,65 +140,65 @@
                     </select>
                   </div>
 
-                <div class="uk-margin">
-                  <select class="uk-select" id="ac">
-                    <option>Animal Color</option>
-                    <button type="button">Animal Color</button>
-                    <div uk-dropdown></div>
-                    <option>White</option>
-                    <option>Black</option>
-                    <option>Brown</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div class="uk-margin">
-                  <select class="uk-select" id="as">
-                    <option>Animal Size</option>
-                    <button type="button">Animal Size</button>
-                    <div uk-dropdown></div>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                  </select>
-                </div>
-                <h6>Where did you find them?</h6>
-                <div class="uk-margin">
-                  <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlFile1">Upload a picture</label>
-                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-                <h6>Can We Contact You?</h6>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline1">Yes,
-                    Please!</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioInline2">No Thanks!</label>
-                </div>
-                <div>
-                  <br>
-                  <input type="email" class="form-control" id="contact" aria-describedby="emailHelp"
-                    placeholder="Contact Info">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your info
-                    with anyone else.</small>
-                </div>
-                <div class="uk-margin">
-                  <textarea class="uk-textarea" id="desc" rows="5"
-                    placeholder="Textarea">Anything you'd like to add?</textarea>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="foundAnimal">Save changes</button>
+                  <div class="uk-margin">
+                    <select class="uk-select" id="ac">
+                      <option>Animal Color</option>
+                      <button type="button">Animal Color</button>
+                      <div uk-dropdown></div>
+                      <option>White</option>
+                      <option>Black</option>
+                      <option>Brown</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="uk-margin">
+                    <select class="uk-select" id="as">
+                      <option>Animal Size</option>
+                      <button type="button">Animal Size</button>
+                      <div uk-dropdown></div>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                  </div>
+                  <h6>Where did you find them?</h6>
+                  <div class="uk-margin">
+                    <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload a picture</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <h6>Can We Contact You?</h6>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Yes,
+                      Please!</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">No Thanks!</label>
+                  </div>
+                  <div>
+                    <br>
+                    <input type="email" class="form-control" id="contact" aria-describedby="emailHelp"
+                      placeholder="Contact Info">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your info
+                      with anyone else.</small>
+                  </div>
+                  <div class="uk-margin">
+                    <textarea class="uk-textarea" id="desc" rows="5"
+                      placeholder="Textarea">Anything you'd like to add?</textarea>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="foundAnimal">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </body>
