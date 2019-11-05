@@ -11,7 +11,7 @@
     bottom: 1px;
     left: 50%;
     margin-left: -200px;
-    transform: translateZ(0); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+    transform: translateZ(0); 
   }
   
   @keyframes walk-cycle {  
@@ -69,6 +69,7 @@
   body {
       background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),
       #d2d2d2 url(http://stash.rachelnabors.com/24ways2012/background_clouds.png);
+  }
       .tuna {
         animation: walk-cycle 1s steps(12) infinite;
         background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
@@ -142,4 +143,28 @@
         font-family: 'Pacifico', cursive;
       }
 
+<<<<<<< HEAD:public/styles/tuna.css
+      .pill-nav a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 5px;
+      }
+      
+      /* Change the color of links on mouse-over */
+      .pill-nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Add a color to the active/current link */
+      .pill-nav a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+=======
   
+>>>>>>> f6a4aeda86c98501ca28cbd6c19a19323a9431c6:style.css
