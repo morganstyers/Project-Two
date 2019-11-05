@@ -1,0 +1,131 @@
+<body style="text-align: center;">
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <h1 id="title" class="display-4">Welcome To Our Catalogue</h1>
+
+            <br>
+            <h3>These Are All The Animals In Our Database. <br>
+                Feel Free To Filter With The Buttons Below</h3>
+            <br>
+            <hr>
+            <button type="button" class="btn btn-dark">
+                Show Lost Animals Only </button>
+
+            <button type="button" class="btn btn-dark">
+                Show Found Animals Only
+            </button>
+            <a class="btn btn-dark" href="./home.html" role="button">
+                <ion-icon name="home"></ion-icon>
+            </a>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card lg-12" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="image/testPuppy.jpg" class="card-img" alt="petPic">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        {{#each animal}}
+                                        {{#if lost}}
+                                        <div class="col-sm-4">
+                                            <div class="row">Type:{{type}}</div>
+                                            <div class="row">Name:{{name}}</div>
+                                            <div class="row">Color:{{color}}</div>
+                                            <div class="row">Size:{{size}}</div>
+                                        </div>
+                                        {{!-- {{/each}} --}}
+                                        {{!-- {{#each animal}} --}}
+                                        <div class="col-xs-8">
+                                            <div class="row">Description:{{description}}</div>
+                                            <div class="row">Last Seen:{{lastSeen}}</div>
+                                            <div class="row">Contact:{{contactInfo}}</div>
+                                            <div class="row">Zip:{{zip}}</div>                                            
+                                        </div>
+                                        {{/if}}
+                                        {{/each}}
+
+
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card-footer position-fixed">
+                                                <input type="checkbox" class="form-check-input" id="found">
+                                                <label class="form-check-label" for="found">Found</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card lg-12" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="image/testPuppy.jpg" class="card-img" alt="petPic">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        {{#each animal}}
+                                        {{#unless lost}}
+                                        <div class="row">Type:{{type}}</div>
+                                        <div class="row">Name:{{name}}</div>
+                                        <div class="row">Color:{{color}}</div>
+                                        <div class="row">Size:{{size}}</div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="row">Description:{{description}}</div>
+                                        <div class="row">Found Near:{{lastSeen}}</div>
+                                        <div class="row">Contact:{{contactInfo}}</div>
+                                        <div class="row">Zip:{{zip}}</div>
+                                        {{/unless}}
+                                        {{/each}}
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>

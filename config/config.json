@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
-    "database": "Animal_DB",
+    "password": "gammaHOTEL911",
+    "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
   },
