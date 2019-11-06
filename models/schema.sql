@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 #DROP DATABASE IF EXISTS animal_db;
 #CREATE DATABASE animal_db;
-=======
-##DROP DATABASE IF EXISTS animal_db;
-##CREATE DATABASE animal_db;
->>>>>>> 1a88a04944ceb45650776a9f17684f71a1970f46
 
 USE animal_db;
 
