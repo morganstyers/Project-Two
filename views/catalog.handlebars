@@ -34,7 +34,7 @@
                 <div class="card lg-12" style="max-width: 100%;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="{{img}}" class="card-img" alt="petPic">
+                            <img src="{{this.img}}" class="card-img" alt="petPic">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -43,18 +43,18 @@
                                         {{#each animal}}
                                         {{#if lost}}
                                         <div class="col-sm-4">
-                                            <div class="row">Type:{{type}}</div>
-                                            <div class="row">Name:{{name}}</div>
-                                            <div class="row">Color:{{color}}</div>
-                                            <div class="row">Size:{{size}}</div>
+                                            <div class="row">Type:{{this.type}}</div>
+                                            <div class="row">Name:{{this.name}}</div>
+                                            <div class="row">Color:{{this.color}}</div>
+                                            <div class="row">Size:{{this.size}}</div>
                                         </div>
                                         {{!-- {{/each}} --}}
                                         {{!-- {{#each animal}} --}}
                                         <div class="col-xs-8">
-                                            <div class="row">Description:{{description}}</div>
-                                            <div class="row">Last Seen:{{lastSeen}}</div>
-                                            <div class="row">Contact:{{contactInfo}}</div>
-                                            <div class="row">Zip:{{zip}}</div>
+                                            <div class="row">Description:{{this.description}}</div>
+                                            <div class="row">Last Seen:{{this.lastSeen}}</div>
+                                            <div class="row">Contact:{{this.contactInfo}}</div>
+                                            <div class="row">Zip:{{this.zip}}</div>
                                         </div>
                                         {{/if}}
                                         {{/each}}
@@ -97,7 +97,7 @@
                 <div class="card lg-12" style="max-width: 100%;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="image/testPuppy.jpg" class="card-img" alt="petPic">
+                            <img src="{{this.img}}" class="card-img" alt="petPic">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -105,16 +105,16 @@
                                     <div class="col-sm-4">
                                         {{#each animal}}
                                         {{#unless lost}}
-                                        <div class="row">Type:{{type}}</div>
-                                        <div class="row">Name:{{name}}</div>
-                                        <div class="row">Color:{{color}}</div>
-                                        <div class="row">Size:{{size}}</div>
+                                        <div class="row">Type:{{this.type}}</div>
+                                        <div class="row">Name:{{this.name}}</div>
+                                        <div class="row">Color:{{this.color}}</div>
+                                        <div class="row">Size:{{this.size}}</div>
                                     </div>
                                     <div class="col-xs-8">
-                                        <div class="row">Description:{{description}}</div>
-                                        <div class="row">Found Near:{{lastSeen}}</div>
-                                        <div class="row">Contact:{{contactInfo}}</div>
-                                        <div class="row">Zip:{{zip}}</div>
+                                        <div class="row">Description:{{this.description}}</div>
+                                        <div class="row">Found Near:{{this.lastSeen}}</div>
+                                        <div class="row">Contact:{{this.contactInfo}}</div>
+                                        <div class="row">Zip:{{this.zip}}</div>
                                         {{/unless}}
                                         {{/each}}
                                     </div>
