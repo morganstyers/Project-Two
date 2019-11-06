@@ -37,17 +37,4 @@ $(function() {
       location.reload();
     });
   });
-
-  $("#foundAnimal").on("click", function(event) {
-    var id = $(this).data("id");
-
-    // Send the DELETE request.
-    $.ajax("/api/catalog/" + id, {
-      type: "POST"
-    }).then(function() {
-      console.log("created new found animal", id);
-      // Reload the page to get the updated list
-      location.reload();
-    });
-  });
 });
