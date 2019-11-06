@@ -1,28 +1,26 @@
 $(function() {
-  $("#lostAnimal").on("click", function(event) {
+  $("#foundAnimal").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-
     var newAnimal = {
-      name: $("#lostName")
+      name: $("#foundName")
         .val()
         .trim(),
-      type: $("#at")
+      type: $("#fat")
         .val()
         .trim(),
-      color: $("#ac")
+      color: $("#fac")
         .val()
         .trim(),
-      size: $("#as")
+      size: $("#fas")
         .val()
         .trim(),
-      zipcode: $("#zipcode").val(),
-      img: $("#petImage").val(),
-      description: $("#desc")
+      zipcode: $("#ls").val(),
+      img: $("#img").val(),
+      description: $("#fdesc")
         .val()
         .trim()
     };
-
     // Send the POST request.
     $.ajax("/api/animals/", {
       type: "POST",
@@ -34,3 +32,4 @@ $(function() {
     });
   });
 });
+  
