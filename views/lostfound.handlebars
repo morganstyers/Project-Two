@@ -1,6 +1,8 @@
 <body style="text-align: center;">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+     <div class="container">
+       <br>
+  <div style="background-color:lightslategray"class="jumbotron jumbotron-fluid">
+ 
       <i id="paw" style="font-size: 50px; " class="fas fa-paw"></i>
       <h1 class="animated fadeInDown" id="title" style="font-family: 'Abril Fatface', cursive;
       text-align: center;" class="display-4">PETRIFIED</h1>
@@ -12,14 +14,16 @@
       <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#found">
         I Found A Pet!
       </button>
-      <a class="btn btn-dark" href="/catalog/" role="button">Browse Our Catalogue</a>
+      <br>
+      <br>
+      <a style="background-color:tomato;" class="btn btn-dark" href="/catalog/" role="button">Browse Our Catalogue</a>
     </div>
     <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 style="font-family: 'Abril Fatface', cursive;" class="modal-title" id="lost">You lost a pet? Take a
+            <h2 style="font-family: 'Abril Fatface', cursive; text-align:center;" class="modal-title" id="lost">You lost a pet? Take a
               deep breath.</h2>
             <hr>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -104,7 +108,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="lostAnimal">Save changes</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="lostAnimal">Save changes</button>
           </div>
         </div>
       </div>
@@ -113,7 +117,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h2 style="font-family: 'Abril Fatface', cursive;" class="modal-title" id="found">You found a pet? Lucky
+              <h2 style="font-family: 'Abril Fatface', cursive; text-align: center;" class="modal-title" id="found"> You found a pet? Lucky
                 you!</h2>
               <hr>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -200,7 +204,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="foundAnimal">Save changes</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="foundAnimal">Submit</button>
           </div>
         </div>
       </div>
