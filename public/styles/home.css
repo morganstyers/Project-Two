@@ -70,7 +70,7 @@ a:link{
     transition:.5s ease;
   }
 
-  #su:hover, #loi:hover {
+  #unt:hover, #su:hover, #loi:hover {
     background:tomato;
     color:white;
   }
@@ -135,7 +135,8 @@ input,  textarea {
   border:1px solid rgb(110, 107, 107);
   color:white;
   border-radius:0;
-  transition:border-color .25s ease, box-shadow .25s ease;
+  transition: border.25s ease .25s ease;
+
 }
 
 textarea {
