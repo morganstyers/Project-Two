@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "orangebread307",
+    "password": "gammaHOTEL911",
     "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "yourRootPassword",
+    "password": "gammaHOTEL911",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
