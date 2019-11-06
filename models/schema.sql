@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #DROP DATABASE IF EXISTS animal_db;
 #CREATE DATABASE animal_db;
+=======
+##DROP DATABASE IF EXISTS animal_db;
+##CREATE DATABASE animal_db;
+>>>>>>> 1a88a04944ceb45650776a9f17684f71a1970f46
 
 USE animal_db;
 
@@ -25,4 +30,4 @@ VALUES ("brownSpots.jpg","dog","fido", "brown", "S", "Brown dog w/spots", true, 
 ("greyPitt.jpeg","dog","Bull", "grey", "L", "Pit Bull", true, "Behind fence on North Davidson", "Bob, 704-555-1123", 28204),
 ("brownCat.jpeg","cat","Cheshire", "brown", "S", "Will scratch your eyes out", true, "WT Harris Blvd", "Grady, 704-555-7752", 28213),
 ("blackCat2.jpeg","cat"," ", "black", "M", "Really sneaky", false, "North Davidson", "Elizabeth, 704-555-7752", 28211),
-("brownMutt.html","dog"," ", "brown", "L", "This is a mutt", false, "At Wendys", "Alice, 704-555-3543", 28209)
+("brownMutt.jpeg","dog"," ", "brown", "L", "This is a mutt", false, "At Wendys", "Alice, 704-555-3543", 28209)

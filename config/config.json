@@ -1,14 +1,18 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "root",
+=======
+    "password": "yourRootPassword",
+>>>>>>> 1a88a04944ceb45650776a9f17684f71a1970f46
     "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "gammaHOTEL911",
+    "password": "yourRootPassword",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
