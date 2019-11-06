@@ -43,9 +43,6 @@ a {
   transition:.5s ease;
 
 }
-a:hover {
-  color:white;
-}
 .form {
   background:rgb(110, 107, 107);
   padding: 40px;
@@ -73,7 +70,7 @@ a:link{
     transition:.5s ease;
   }
 
-  a:hover {
+a:hover {
     background:tomato;
     color:white;
   }
@@ -187,4 +184,15 @@ button:hover, button:focus {
   margin-top:-20px;
   text-align:right;
 }
-
+#browseCat, #regHo{
+  color: white;
+  text-emphasis: none;
+  display: inline-block;
+  width: initial;
+  padding-left:10px; 
+  padding-right: 10px;
+  font-size: inherit;
+  border: 1px solid black;
+  text-align: center;
+  float: none;
+}
