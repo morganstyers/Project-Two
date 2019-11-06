@@ -70,7 +70,7 @@ a:link{
     transition:.5s ease;
   }
 
-a:hover {
+#su:hover, #loi:hover {
     background:tomato;
     color:white;
   }

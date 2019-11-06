@@ -1,6 +1,5 @@
-#login{
-  padding-top: 45px;
-  font-size: 70px;
+*{
+  border: none !important;
 }
 .tuna {
     animation: walk-cycle 1s steps(12) infinite;
@@ -20,7 +19,7 @@
   }
   
   .foreground, .midground, .background {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     position: absolute;
     top: 0; left: 0;
