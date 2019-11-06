@@ -1,3 +1,11 @@
+<head>
+ <title>{{title}}</title>
+    {{#each css}}
+        <link rel="stylesheet" href="public/styles/home.css{{this}}" />
+    {{/each}}
+</head>
+
+
 <body style="text-align: center;">
     <br>
     <div class="container">
@@ -18,7 +26,7 @@
             <button type="button" class="btn btn-dark">
                 Show Found Animals Only
             </button>
-            <a style="background-color:tomato;"class="btn btn-dark" href="/lostfound/" role="button">
+            <a id="regHo" style="background-color:tomato;"class="btn btn-dark" href="/lostfound/" role="button">
                 <i class="fas fa-home"></i>
             </a>
         </div>

@@ -1,5 +1,8 @@
 <head>
-  <link type="stylesheets" href="public/styles/home.css">
+ <title>{{title}}</title>
+    {{#each css}}
+        <link rel="stylesheet" href="public/styles/home.css{{this}}" />
+    {{/each}}
 </head>
 
 <body class="align" style="text-align: center;">
