@@ -1,13 +1,19 @@
+<head>
+ <title>{{title}}</title>
+    {{#each css}}
+        <link rel="stylesheet" href="public/styles/tuna.css{{this}}">
+    {{/each}}
+</head>
 
+
+<body>
  <a href="/lostfound/" class="foreground"></a>
   <div class="container" size="40px">
-    <a href="/lostfound/"><img id="logo"
+    <a id="logocont" href="/lostfound/"><img  id="logo"
       src="image/logo.gif"
       alt="logo"style="width:340px;height:280px"align="center"></a>
       
   </div>
-
-<body>
 
     <div class="container"  size="40px">
         {{!-- <img style="margin-left: 30%" src="image/logo.gif" alt="profile" sizes="40px"> --}}

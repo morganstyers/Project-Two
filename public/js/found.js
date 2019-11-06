@@ -1,10 +1,10 @@
 $(function() {
-  $("#lostAnimal").on("submit", function(event) {
+  $("#foundAnimal").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
     var newAnimal = {
-      name: $("#lostName")
+      name: $("#foundName")
         .val()
         .trim(),
       type: $("#at")
@@ -33,7 +33,7 @@ $(function() {
       type: "POST",
       data: newAnimal
     }).then(function() {
-      console.log("created new lost animal");
+      console.log("created new found animal");
       // Reload the page to get the updated list
       location.reload();
     });
