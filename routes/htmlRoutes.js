@@ -7,7 +7,7 @@ module.exports = function(app) {
     res.render("index");
   });
   app.get("/lostFound/", function(req, res) {
-    db.animal.findAll({}).then(function(dbAnimals) {
+    db.Animal.findAll({}).then(function(dbAnimals) {
       res.render("lostfound", {
         Animals: dbAnimals
       });
@@ -15,7 +15,7 @@ module.exports = function(app) {
   });
 
   app.get("/catalog/", function(req, res) {
-    db.animal.findAll({}).then(function(dbAnimals) {
+    db.Animal.findAll({}).then(function(dbAnimals) {
       res.render("catalog", {
         Animals: dbAnimals
       });
