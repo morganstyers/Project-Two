@@ -79,7 +79,7 @@
                     placeholder="e.g. Neighborhood, cross streets, etc..."></textarea>
                 </div>
                 <div class="uk-margin">
-                  <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
+                  <input class="uk-input" id="zipcode" type="text" placeholder="Zip Code">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlFile1">Upload a picture</label>
@@ -108,7 +108,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal" id="lostAnimal">Save changes</button>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal" id="foundAnimal">Save changes</button>
           </div>
         </div>
       </div>
@@ -172,11 +172,11 @@
                     placeholder="e.g. Neighborhood, cross streets, etc..."></textarea>
                 </div>
                 <div class="uk-margin">
-                  <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
+                  <input class="uk-input" id="zipcode" type="text" placeholder="Zip Code">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlFile1">Upload a picture</label>
-                  <input type="file" class="form-control-file" id="img">
+                  <input type="file" class="form-control-file" id="petImage">
                 </div>
                 <h6>Can We Contact You?</h6>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -195,17 +195,18 @@
                   <small id="emailHelp" class="form-text text-muted">We'll never share your info
                     with anyone else.</small>
                 </div>
-                
+                <div class="uk-margin">
+                  <textarea class="uk-textarea" id="desc" rows="5"
+                    placeholder="Textarea">Anything you'd like to add?</textarea>
+                </div>
               </fieldset>
             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal" id="foundAnimal">Submit</button>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal" id="foundAnimal">Submit</button>
           </div>
         </div>
       </div>
-    </form>
-      
     </div>
 </body>
