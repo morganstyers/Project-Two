@@ -9,7 +9,7 @@ module.exports = function(app) {
   app.get("/lostFound/", function(req, res) {
     db.Animal.findAll({}).then(function(dbAnimals) {
       res.render("lostfound", {
-        animals: dbAnimals
+        Animals: dbAnimals
       });
     });
   });
@@ -17,7 +17,7 @@ module.exports = function(app) {
   app.get("/catalog/", function(req, res) {
     db.Animal.findAll({}).then(function(dbAnimals) {
       res.render("catalog", {
-        animals: dbAnimals
+        Animals: dbAnimals
       });
     });
   });
