@@ -204,3 +204,7 @@ button:hover, button:focus {
   font-size: 14px;
   color:rgb(90, 89, 89);
 }
+.custom-control-label{
+  font-size: 14px;
+  color:rgb(90, 89, 89);
+}
