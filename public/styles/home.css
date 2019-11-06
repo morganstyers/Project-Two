@@ -196,3 +196,9 @@ button:hover, button:focus {
   text-align: center;
   float: none;
 }
+
+#upup{
+  position: static !important;
+  font-size: 14px;
+  color:rgb(90, 89, 89);
+}
