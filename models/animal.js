@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-  var Animal = sequelize.define(
-    "Animal",
+  var Animals = sequelize.define(
+    "Animals",
     {
       img: DataTypes.STRING,
       type: DataTypes.STRING,
@@ -20,5 +20,5 @@ module.exports = function(sequelize, DataTypes) {
       timestamps: false
     }
   );
-  return Animal;
+  return Animals;
 };

@@ -7,17 +7,17 @@ module.exports = function(app) {
     res.render("index");
   });
   app.get("/lostFound/", function(req, res) {
-    db.Animal.findAll({}).then(function(dbAnimals) {
+    db.animal.findAll({}).then(function(dbAnimals) {
       res.render("lostfound", {
-        animals: dbAnimals
+        Animals: dbAnimals
       });
     });
   });
 
   app.get("/catalog/", function(req, res) {
-    db.Animal.findAll({}).then(function(dbAnimals) {
+    db.animal.findAll({}).then(function(dbAnimals) {
       res.render("catalog", {
-        animals: dbAnimals
+        Animals: dbAnimals
       });
     });
   });
