@@ -2,38 +2,84 @@
   <link type="stylesheets" href="public/styles/home.css">
 </head>
 
-<body  class="align" style="text-align: center;">
+<body class="align" style="text-align: center;">
+  <br>
 
-  <div id="log" class="grid">
+  <div id="log" class="container">
+    <div class="form">
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      <br>
+      <br>
+      <hr>
+      <div class="tab-content">
+        <div id="signup">
+          <h1>Sign Up for Free</h1>
+          <hr>
+          <form action="/" method="post">
 
-    <form action="/" method="post" class="form login">
+            <div class="top-row">
+              <div id="tr" class="field-wrap">
+                <label>
+                  First Name
+                  <span class="req">*</span>
+                </label>
+                <input type="text" autocomplete="off" />
+              </div>
+              <div class="field-wrap">
+                <label>
+                  Last Name<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
 
-      <header style=" background-color:lightslategray;" class="login__header">
-        <h3 style="color:black; font-size: 40px;"class="login__title">LOGIN</h3>
-      </header>
+            <div class="field-wrap">
+              <label>
+                Set A Password<span class="req">*</span>
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
 
-      <div class="login__body">
-
-        <div class="form__field">
-          <input type="email" placeholder="Email" required>
+            <button type="submit" class="button button-block" />Get Started</button>
+          </form>
         </div>
+        <div id="login">
+          
+          <h1 id="welc">Welcome Back!</h1>
+          <hr>
+          <form action="/" method="post">
+            <div class="field-wrap">
+              <label>
+                Email Address<span class="req">*</span>
+              </label>
+              <input type="email" required autocomplete="off" />
+            </div>
 
-        <div class="form__field">
-          <input type="password" placeholder="Password" required>
+            <div class="field-wrap">
+              <label>
+                Password<span class="req">*</span>
+              </label>
+              <input type="password" required autocomplete="off" />
+            </div>
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+            <button class="button button-block" />Log In</button>
+          </form>
         </div>
-
       </div>
+    </div><!-- tab-content -->
+  </div> <!-- /form -->
 
-      <footer class="login__footer">
-        <input style="background-color:tomato" id="lf" type="submit" value="LOGIN">
-
-        <p><span class="icon icon--info">?</span><a href="#">Forgot Password</a></p>
-      </footer>
-
-    </form>
 
   </div>
-
   <div id="mm" class="container">
     <br>
     <div style="background-color:lightslategray" class="jumbotron jumbotron-fluid">
@@ -58,7 +104,8 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 style="font-family: 'Abril Fatface', cursive; text-align:center;" class="modal-title" id="lost">You lost
+            <h2 style="font-family: 'Abril Fatface', cursive; text-align:center;" class="modal-title" id="lost">You
+              lost
               a pet? Take a
               deep breath.</h2>
             <hr>
@@ -247,11 +294,56 @@
       </div>
     </div>
     <script>
-       $("#mm").hide();
+   
+      $("#mm").hide();
       $("#lf").on("click", function (event) {
         $("#log").hide();
-       $("#mm").show();
+        $("#mm").show();
       })
-     
+
+      $('.form').find('input, textarea').on('keyup blur focus', function (e) {
+        var $this = $(this),
+          label = $this.prev('label');
+
+        if (e.type === 'keyup') {
+          if ($this.val() === '') {
+            label.removeClass('active highlight');
+          } else {
+            label.addClass('active highlight');
+          }
+        } else if (e.type === 'blur') {
+          if ($this.val() === '') {
+            label.removeClass('active highlight');
+          } else {
+            label.removeClass('highlight');
+          }
+        } else if (e.type === 'focus') {
+
+          if ($this.val() === '') {
+            label.removeClass('highlight');
+          }
+          else if ($this.val() !== '') {
+            label.addClass('highlight');
+          }
+        }
+
+      });
+
+      $('.tab a').on('click', function (e) {
+
+        e.preventDefault();
+
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+
+        target = $(this).attr('href');
+
+        $('.tab-content > div').not(target).hide();
+
+        $(target).fadeIn(600);
+
+
+      });
+      
     </script>
 </body>
