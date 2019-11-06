@@ -1,88 +1,8 @@
-<head>
-  <link type="stylesheets" href="public/styles/home.css">
-</head>
-
-<body class="align" style="text-align: center;">
-  <br>
-  <div id="log" class="container">
-    <div class="form">
-      <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
-      </ul>
-      <br>
-      <br>
-      <hr>
-      <div class="tab-content">
-        <div id="signup">
-          <h1>Sign Up for Free</h1>
-          <hr>
-          <form id="nu">
-
-            <div class="top-row">
-              <div id="newUserFN-input" class="field-wrap">
-                <label>
-                  First Name
-                  <span class="req">*</span>
-                </label>
-                <input type="text" autocomplete="off" />
-              </div>
-              <div class="field-wrap">
-                <label>
-                  Last Name<span class="req">*</span>
-                </label>
-                <input id="newUserLN-input" type="text" required autocomplete="off" />
-              </div>
-            </div>
-            <div class="field-wrap">
-              <label>
-                Email Address<span class="req">*</span>
-              </label>
-              <input id="newUserEmail-input" type="email" required autocomplete="off" />
-            </div>
-
-            <div class="field-wrap">
-              <label>
-                Set A Password<span class="req">*</span>
-              </label>
-              <input id="newUserPW-input" type="password" required autocomplete="off" />
-            </div>
-
-            <button id="ss" type="submit" class="button button-block" />Get Started</button>
-          </form>
-        </div>
-        <div id="login">
-
-          <h1 id="welc">Welcome Back!</h1>
-          <hr>
-          <form action="/" method="post">
-            <div class="field-wrap">
-              <label>
-                Email Address<span class="req">*</span>
-              </label>
-              <input type="email" required autocomplete="off" />
-            </div>
-
-            <div class="field-wrap">
-              <label>
-                Password<span class="req">*</span>
-              </label>
-              <input type="password" required autocomplete="off" />
-            </div>
-            <p class="forgot"><a href="#">Forgot Password?</a></p>
-            <button id="lin"class="button button-block" />Log In</button>
-          </form>
-        </div>
-      </div>
-    </div><!-- tab-content -->
-  </div> <!-- /form -->
-
-
-  </div>
-  <div id="mm" class="container">
-    <br>
-    <div style="background-color:lightslategray" class="jumbotron jumbotron-fluid">
-
+<body style="text-align: center;">
+     <div class="container">
+       <br>
+  <div style="background-color:lightslategray"class="jumbotron jumbotron-fluid">
+ 
       <i id="paw" style="font-size: 50px; " class="fas fa-paw"></i>
       <h1 class="animated fadeInDown" id="title" style="font-family: 'Abril Fatface', cursive;
       text-align: center;" class="display-4">PETRIFIED</h1>
@@ -96,16 +16,14 @@
       </button>
       <br>
       <br>
-      <a style="background-color:tomato;" id="browseCat" class="btn btn-dark" href="/catalog/" role="button">Browse Our Catalogue</a>
+      <a style="background-color:tomato;" class="btn btn-dark" href="/catalog/" role="button">Browse Our Catalogue</a>
     </div>
     <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 style="font-family: 'Abril Fatface', cursive; text-align:center;" class="modal-title" id="lost">You
-              lost
-              a pet? Take a
+            <h2 style="font-family: 'Abril Fatface', cursive; text-align:center;" class="modal-title" id="lost">You lost a pet? Take a
               deep breath.</h2>
             <hr>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -119,9 +37,9 @@
 
                 <legend class="uk-legend">Lets Find Out About Your Little One</legend>
 
-                <div class="uk-margin">
-                  <input class="uk-input" type="text" placeholder="Animal Name" id="lostName">
-                </div>
+                  <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Animal Name" id="lostName">
+                  </div>
 
                 <div class="uk-margin">
                   <select class="uk-select" id="at">
@@ -163,9 +81,9 @@
                 <div class="uk-margin">
                   <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
                 </div>
-                <div  id="upup"class="form-group">
-                  <label class="fix"id="upup" for="exampleFormControlFile1">Upload a picture</label>
-                  <input id="upup" type="file" class="form-control-file" id="petImage">
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload a picture</label>
+                  <input type="file" class="form-control-file" id="petImage">
                 </div>
                 <h6>Can We Contact You?</h6>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -184,7 +102,7 @@
                   <small id="emailHelp" class="form-text text-muted">We'll never share your info
                     with anyone else.</small>
                 </div>
-
+                
               </fieldset>
             </form>
           </div>
@@ -195,38 +113,37 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 style="font-family: 'Abril Fatface', cursive; text-align: center;" class="modal-title" id="found"> You
-              found a pet? Lucky
-              you!</h2>
-            <hr>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
+      <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 style="font-family: 'Abril Fatface', cursive; text-align: center;" class="modal-title" id="found"> You found a pet? Lucky
+                you!</h2>
+              <hr>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
 
-            <form>
-              <fieldset class="uk-fieldset">
+              <form>
+                <fieldset class="uk-fieldset">
 
-                <legend class="uk-legend">Lets get your guest back home</legend>
+                  <legend class="uk-legend">Lets get your guest back home</legend>
 
-                <div class="uk-margin">
-                  <input class="uk-input" type="text" placeholder="Animal Name (if applicable)" id="foundName">
-                </div>
+                  <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Animal Name (if applicable)" id="foundName">
+                  </div>
 
-                <div class="uk-margin">
-                  <h6>What Kind of Animal Did You Find?</h6>
-                  <select class="uk-select" id="at">
-                    <option>Animal Type</option>
-                    <option>Dog</option>
-                    <option>Cat</option>
-                    <option>Other</option>
-                  </select>
-                </div>
+                  <div class="uk-margin">
+                    <h6>What Kind of Animal Did You Find?</h6>
+                    <select class="uk-select" id="at">
+                      <option>Animal Type</option>
+                      <option>Dog</option>
+                      <option>Cat</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
 
                 <div class="uk-margin">
                   <select class="uk-select" id="ac">
@@ -257,9 +174,9 @@
                 <div class="uk-margin">
                   <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
                 </div>
-                <div id="upup" class="form-group">
-                  <label class="fix" id="upup" for="exampleFormControlFile1">Upload a picture</label>
-                  <input id="upup" type="file" class="form-control-file" id="img">
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload a picture</label>
+                  <input type="file" class="form-control-file" id="img">
                 </div>
                 <h6>Can We Contact You?</h6>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -292,55 +209,4 @@
         </div>
       </div>
     </div>
-
-    <script>
-
-      $("#mm").hide();
-      $("#ss").on("click", function (event) {
-        $("#log").hide();
-        $("#mm").show();
-      })
-
-      $('.form').find('input, textarea').on('keyup blur focus', function (e) {
-        var $this = $(this),
-          label = $this.prev('label');
-
-        if (e.type === 'keyup') {
-          if ($this.val() === '') {
-            label.removeClass('active highlight');
-          } else {
-            label.addClass('active highlight');
-          }
-        } else if (e.type === 'blur') {
-          if ($this.val() === '') {
-            label.removeClass('active highlight');
-          } else {
-            label.removeClass('highlight');
-          }
-        } else if (e.type === 'focus') {
-
-          if ($this.val() === '') {
-            label.removeClass('highlight');
-          }
-          else if ($this.val() !== '') {
-            label.addClass('highlight');
-          }
-        }
-
-      });
-
-      $('.tab a').on('click', function (e) {
-
-        e.preventDefault();
-
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-
-        target = $(this).attr('href');
-
-        $('.tab-content > div').not(target).hide();
-
-        $(target).fadeIn(600);
-      });
-    </script>
 </body>
