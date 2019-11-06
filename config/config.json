@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "yourRootPassword",
+=======
+    "password": "orangebread307",
+>>>>>>> 69802a858930a9e92964f0a8665b4a39a37f0821
     "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
