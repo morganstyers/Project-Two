@@ -1,8 +1,43 @@
-<body style="text-align: center;">
-     <div class="container">
-       <br>
-  <div style="background-color:lightslategray"class="jumbotron jumbotron-fluid">
- 
+<head>
+  <link type="stylesheets" href="public/styles/home.css">
+</head>
+
+<body  class="align" style="text-align: center;">
+
+  <div id="log" class="grid">
+
+    <form action="/" method="post" class="form login">
+
+      <header style=" background-color:lightslategray;" class="login__header">
+        <h3 style="color:black; font-size: 40px;"class="login__title">LOGIN</h3>
+      </header>
+
+      <div class="login__body">
+
+        <div class="form__field">
+          <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="form__field">
+          <input type="password" placeholder="Password" required>
+        </div>
+
+      </div>
+
+      <footer class="login__footer">
+        <input style="background-color:tomato" id="lf" type="submit" value="LOGIN">
+
+        <p><span class="icon icon--info">?</span><a href="#">Forgot Password</a></p>
+      </footer>
+
+    </form>
+
+  </div>
+
+  <div id="mm" class="container">
+    <br>
+    <div style="background-color:lightslategray" class="jumbotron jumbotron-fluid">
+
       <i id="paw" style="font-size: 50px; " class="fas fa-paw"></i>
       <h1 class="animated fadeInDown" id="title" style="font-family: 'Abril Fatface', cursive;
       text-align: center;" class="display-4">PETRIFIED</h1>
@@ -23,7 +58,8 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 style="font-family: 'Abril Fatface', cursive; text-align:center;" class="modal-title" id="lost">You lost a pet? Take a
+            <h2 style="font-family: 'Abril Fatface', cursive; text-align:center;" class="modal-title" id="lost">You lost
+              a pet? Take a
               deep breath.</h2>
             <hr>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -37,9 +73,9 @@
 
                 <legend class="uk-legend">Lets Find Out About Your Little One</legend>
 
-                  <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Animal Name" id="lostName">
-                  </div>
+                <div class="uk-margin">
+                  <input class="uk-input" type="text" placeholder="Animal Name" id="lostName">
+                </div>
 
                 <div class="uk-margin">
                   <select class="uk-select" id="at">
@@ -102,7 +138,7 @@
                   <small id="emailHelp" class="form-text text-muted">We'll never share your info
                     with anyone else.</small>
                 </div>
-                
+
               </fieldset>
             </form>
           </div>
@@ -113,37 +149,38 @@
         </div>
       </div>
     </div>
-      <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 style="font-family: 'Abril Fatface', cursive; text-align: center;" class="modal-title" id="found"> You found a pet? Lucky
-                you!</h2>
-              <hr>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
+    <div class="modal fade" id="found" tabindex="-1" role="dialog" aria-labelledby="found" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 style="font-family: 'Abril Fatface', cursive; text-align: center;" class="modal-title" id="found"> You
+              found a pet? Lucky
+              you!</h2>
+            <hr>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
 
-              <form>
-                <fieldset class="uk-fieldset">
+            <form>
+              <fieldset class="uk-fieldset">
 
-                  <legend class="uk-legend">Lets get your guest back home</legend>
+                <legend class="uk-legend">Lets get your guest back home</legend>
 
-                  <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Animal Name (if applicable)" id="foundName">
-                  </div>
+                <div class="uk-margin">
+                  <input class="uk-input" type="text" placeholder="Animal Name (if applicable)" id="foundName">
+                </div>
 
-                  <div class="uk-margin">
-                    <h6>What Kind of Animal Did You Find?</h6>
-                    <select class="uk-select" id="at">
-                      <option>Animal Type</option>
-                      <option>Dog</option>
-                      <option>Cat</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
+                <div class="uk-margin">
+                  <h6>What Kind of Animal Did You Find?</h6>
+                  <select class="uk-select" id="at">
+                    <option>Animal Type</option>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Other</option>
+                  </select>
+                </div>
 
                 <div class="uk-margin">
                   <select class="uk-select" id="ac">
@@ -209,4 +246,12 @@
         </div>
       </div>
     </div>
+    <script>
+       $("#mm").hide();
+      $("#lf").on("click", function (event) {
+        $("#log").hide();
+       $("#mm").show();
+      })
+     
+    </script>
 </body>
