@@ -1,7 +1,4 @@
-#login{
-  padding-top: 45px;
-  font-size: 70px;
-}
+
 .tuna {
     animation: walk-cycle 1s steps(12) infinite;
     background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
@@ -19,12 +16,11 @@
     100% {background-position: 0 -2391px; } 
   }
   
-  .foreground, .midground, .background {
+  .midground, .background {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0; left: 0;
-    translate3d(0,0,0); 
+    translate: 3d(0,0,0); 
   }
   
   .foreground {
@@ -92,12 +88,12 @@
         height: 100%;
         position: absolute;
         top: 0; left: 0;
-        translate3d(0,0,0); 
       }
       
       .foreground {
+
         animation: parallax_fg linear 10s infinite both;
-        background:  url(http://stash.rachelnabors.com/24ways2012/foreground_grass.png) 0 100% repeat-x;
+        background: url(http://stash.rachelnabors.com/24ways2012/foreground_grass.png) 0 100% repeat-x;
         z-index: 3;
       }
       
@@ -142,25 +138,10 @@
       .h1{
         font-family: 'Pacifico', cursive;
       }
-
-      .pill-nav a {
-        display: inline-block;
-        color: black;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-        font-size: 17px;
-        border-radius: 5px;
-      }
-      
-      /* Change the color of links on mouse-over */
-      .pill-nav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      /* Add a color to the active/current link */
-      .pill-nav a.active {
-        background-color: dodgerblue;
-        color: white;
-      }
+a:hover{
+  background-color: transparent !important;
+}
+a{
+  width:100%;
+  margin-right: 50%;
+}
