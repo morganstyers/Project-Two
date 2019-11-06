@@ -28,7 +28,7 @@ $(function() {
     };
 
     // Send the POST request.
-    $.ajax("/api/catalog", {
+    $.ajax("/api/animals", {
       type: "POST",
       data: newAnimal
     }).then(function() {
