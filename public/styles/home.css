@@ -70,7 +70,7 @@ a:link{
     transition:.5s ease;
   }
 
-#su:hover, #loi:hover {
+  #su:hover, #loi:hover {
     background:tomato;
     color:white;
   }
@@ -106,24 +106,25 @@ label {
   color:tomato;
   opacity:0;
 }
-label:active {
+
+  label:active {
   transform:translateY(50px);
   left:2px;
   font-size:14px;
 }
-
-input:focus {
+ input:focus {
   padding-bottom: 15px;
   outline: 0;
   border-width: 0 0 5px 0;
   border-bottom-color: tomato;
 }
+
 label {
   float: left;
   margin-right: 20px;
 }
 
-input, textarea {
+input,  textarea {
   font-size:22px;
   display:block;
   width:100%;
