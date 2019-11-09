@@ -12,7 +12,7 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/animals",
+      url: "api/catalog",
       data: JSON.stringify(results)
     });
   },
