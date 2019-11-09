@@ -208,3 +208,6 @@ button:hover, button:focus {
   font-size: 14px;
   color:rgb(90, 89, 89);
 }
+.card-img-top {
+  height: 300px;
+}

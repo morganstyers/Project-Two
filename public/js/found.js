@@ -1,5 +1,5 @@
-$(function() {
-  $("#foundAnimal").on("click", function(event) {
+$(function () {
+  $("#foundAnimal").on("click", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
     var newAnimal = {
@@ -32,4 +32,3 @@ $(function() {
     });
   });
 });
-  

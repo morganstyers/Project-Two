@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "orangebread307",
+    "password": "yourRootPassword",
     "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
