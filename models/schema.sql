@@ -1,9 +1,9 @@
-#DROP DATABASE IF EXISTS animal_db;
-#CREATE DATABASE animal_db;
+DROP DATABASE IF EXISTS animal_db;
+CREATE DATABASE animal_db;
 
 USE animal_db;
 
-#CREATE TABLE Animals
+CREATE TABLE Animals;
 
 INSERT INTO Animals (img, type, name, color, size, description, lostFound, lastSeen, contactInfo, zip)
 VALUES ("brownSpots.jpg","dog","fido", "brown", "S", "Brown dog w/spots", true, "Yesterday on Independence", "Pam 704-555-6166", "28215"),
