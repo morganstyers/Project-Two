@@ -1,8 +1,8 @@
 <head>
- <title>{{title}}</title>
-    {{#each css}}
-        <link rel="stylesheet" href="public/styles/home.css{{this}}">
-    {{/each}}
+  <title>{{title}}</title>
+  {{#each css}}
+  <link rel="stylesheet" href="public/styles/home.css{{this}}">
+  {{/each}}
 </head>
 
 <body class="align" style="text-align: center;">
@@ -13,8 +13,8 @@
         <li class="tab active"><a id="su" href="#signup">Sign Up</a></li>
         <li class="tab"><a id="loi" href="#login">Log In</a></li>
       </ul>
-<br>
-<br>
+      <br>
+      <br>
       <hr>
       <div class="tab-content">
         <div id="signup">
@@ -53,29 +53,29 @@
 
             <button id="dd" type="submit" class="button button-block" />Get Started</button>
             <br>
-               <button id="ss" type="submit" class="button button-block" /> Guest</button>
+            <button id="ss" type="submit" class="button button-block" /> Guest</button>
           </form>
         </div>
         <div id="login">
 
           <h1 id="welc">Welcome Back!</h1>
           <hr>
-          <form action="/" method="post">
+          <form name="accountenter" onsubmit="return validateForm()" action="" method="">
             <div class="field-wrap">
               <label>
                 Email Address<span class="req">*</span>
               </label>
-              <input type="email" required autocomplete="off" />
+              <input name="un" type="email" required autocomplete="off" />
             </div>
 
             <div class="field-wrap">
               <label>
                 Password<span class="req">*</span>
               </label>
-              <input type="password" required autocomplete="off" />
+              <input name="pw" type="password" required autocomplete="off" />
             </div>
             <p class="forgot"><a id="unt" href="mailto:petrified@gmail.com">Forgot Password?</a></p>
-            <button id="lin"class="button button-block" />Log In</button>
+            <button type="submit" id="lin" class="button button-block" />Log In</button>
           </form>
         </div>
       </div>
@@ -101,7 +101,8 @@
       </button>
       <br>
       <br>
-      <a style="background-color:tomato;" id="browseCat" class="btn btn-dark" href="/catalog/" role="button">Browse Our Catalogue</a>
+      <a style="background-color:tomato;" id="browseCat" class="btn btn-dark" href="/catalog/" role="button">Browse Our
+        Catalogue</a>
     </div>
     <div class="modal fade" id="lost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
@@ -168,8 +169,8 @@
                 <div class="uk-margin">
                   <input class="uk-input" id="ls" type="text" placeholder="Zip Code">
                 </div>
-                <div  id="upup"class="form-group">
-                  <label class="fix"id="upup" for="exampleFormControlFile1">Upload a picture</label>
+                <div id="upup" class="form-group">
+                  <label class="fix" id="upup" for="exampleFormControlFile1">Upload a picture</label>
                   <input id="upup" type="file" class="form-control-file" id="petImage">
                 </div>
                 <h6>Can We Contact You?</h6>
@@ -195,7 +196,8 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button style="background-color:tomato" type="button" class="btn" data-dismiss="modal" id="lostAnimal">Submit</button>
+            <button style="background-color:tomato" type="button" class="btn" data-dismiss="modal"
+              id="lostAnimal">Submit</button>
           </div>
         </div>
       </div>
@@ -292,18 +294,43 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" style="background-color:tomato" class="btn" data-dismiss="modal" id="foundAnimal">Submit</button>
+            <button type="button" style="background-color:tomato" class="btn" data-dismiss="modal"
+              id="foundAnimal">Submit</button>
           </div>
         </div>
       </div>
     </div>
 
     <script>
+
       $("#mm").hide();
-      $("#ss").on("click", function (event) {
-        $("#log").hide();
-        $("#mm").show();
-      })
+      $("#log").show();
+
+
+      $("#ss").on('click', function () {
+        $('#log').toggle('hide')
+        $('#mm').toggle('show')
+      });
+
+
+
+      function validateForm() {
+        
+        var user = document.accountenter.un.value;
+        var pass = document.accountenter.pw.value;
+
+        if ((user == "" || user == "") && pass == "") {
+          $('#log').toggle('hide');
+          $('#mm').toggle('show');
+        } else {
+          alert("oops thats not it! Lets continue as a guest for now.");
+          $('#log').toggle('hide');
+          $('#mm').toggle('show');
+        }
+      }
+
+
+
       $('.form').find('input, textarea').on('keyup blur focus', function (e) {
         var $this = $(this),
           label = $this.prev('label');
@@ -336,5 +363,7 @@
         $('.tab-content > div').not(target).hide();
         $(target).fadeIn(600);
       });
+
+
     </script>
 </body>

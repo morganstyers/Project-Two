@@ -1,6 +1,8 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded. //CHANGE STATE FROM LOST TO FOUND
 $(function() {
   $("#found").on("click", function(event) {
+    event.preventDefault();
+
     var id = $(this).data("id");
     var found = $(this).data("found");
 
@@ -15,7 +17,7 @@ $(function() {
     }).then(function() {
       console.log("changed animal to", lostFound);
       // Reload the page to get the updated list
-      location.reload();
+      //location.reload();
     });
   });
 
@@ -35,15 +37,16 @@ $(function() {
     // Send the POST request.
     $.ajax("/api/catalog", {
       type: "POST",
-      data: newCat
+      data: newAnimal
     }).then(function() {
       console.log("created new lost animal");
       // Reload the page to get the updated list
-      location.reload();
+      //location.reload();
     });
   });
 
   $("#foundAnimal").on("click", function(event) {
+    event.preventDefault();
     var id = $(this).data("id");
 
     // Send the DELETE request.

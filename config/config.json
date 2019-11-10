@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "orangebread307",
+=======
+    "password": "gammaHOTEL911",
+>>>>>>> 06e63c3209527d0d9dc6a2a73d9b5174bebb66bd
     "database": "animal_db",
     "host": "localhost",
     "dialect": "mysql"
@@ -18,3 +22,5 @@
     "dialect": "mysql"
   }
 }
+
+
